@@ -1,36 +1,107 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
-template: splash
-hero:
-  tagline: Congrats on setting up a new Starlight project!
-  image:
-    file: ../../assets/houston.webp
-  actions:
-    - text: Example Guide
-      link: /guides/example/
-      icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
-      variant: minimal
+title: Rizk SDK Documentation
+description: Documentation for the Rizk SDK - a powerful toolkit for building AI applications with built-in guardrails, telemetry, and policy enforcement.
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+Welcome to the Rizk SDK documentation. Rizk is a powerful SDK for building AI applications with built-in guardrails, telemetry, and policy enforcement.
 
-## Next steps
+## Getting Started
 
-<CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
-</CardGrid>
+<div class="feature-grid">
+  <a href="/getting-started/installation" class="feature-card">
+    <h3>Installation</h3>
+    <p>Setting up Rizk SDK in your project</p>
+  </a>
+  <a href="/getting-started/quickstart" class="feature-card">
+    <h3>Quick Start</h3>
+    <p>Build your first app with Rizk SDK</p>
+  </a>
+  <a href="/getting-started/configuration" class="feature-card">
+    <h3>Configuration</h3>
+    <p>Configure Rizk SDK for your needs</p>
+  </a>
+</div>
+
+## Core Concepts
+
+<div class="feature-grid">
+  <a href="/core-concepts/guardrails" class="feature-card">
+    <h3>Guardrails</h3>
+    <p>Protect your AI applications</p>
+  </a>
+  <a href="/core-concepts/telemetry" class="feature-card">
+    <h3>Telemetry</h3>
+    <p>Monitor and analyze usage</p>
+  </a>
+  <a href="/core-concepts/policy-enforcement" class="feature-card">
+    <h3>Policy Enforcement</h3>
+    <p>Implement and enforce policies</p>
+  </a>
+  <a href="/core-concepts/tracing" class="feature-card">
+    <h3>Tracing</h3>
+    <p>Debug and track execution flows</p>
+  </a>
+</div>
+
+## API Reference
+
+<div class="feature-grid">
+  <a href="/api/rizk" class="feature-card">
+    <h3>Rizk Class</h3>
+    <p>Core SDK functionality</p>
+  </a>
+  <a href="/api/client" class="feature-card">
+    <h3>Client</h3>
+    <p>Client-side integration</p>
+  </a>
+  <a href="/api/decorators" class="feature-card">
+    <h3>Decorators</h3>
+    <p>Extend functionality</p>
+  </a>
+  <a href="/api/guardrails-engine" class="feature-card">
+    <h3>Guardrails Engine</h3>
+    <p>Advanced guardrails configuration</p>
+  </a>
+</div>
+
+## Guides
+
+<div class="feature-grid">
+  <a href="/guides/building-an-ai-agent" class="feature-card">
+    <h3>Building an AI Agent</h3>
+    <p>Create intelligent agents</p>
+  </a>
+  <a href="/guides/implementing-guardrails" class="feature-card">
+    <h3>Implementing Guardrails</h3>
+    <p>Set up effective protections</p>
+  </a>
+  <a href="/guides/using-telemetry" class="feature-card">
+    <h3>Using Telemetry</h3>
+    <p>Collect and analyze metrics</p>
+  </a>
+  <a href="/guides/policy-management" class="feature-card">
+    <h3>Policy Management</h3>
+    <p>Manage and enforce policies</p>
+  </a>
+</div>
+
+{/* ## Examples & Troubleshooting
+
+<div class="dual-column">
+  <div>
+    <h3>Examples</h3>
+    <ul>
+      <li><a href="/examples/basic-usage">Basic Usage</a></li>
+      <li><a href="/examples/advanced-guardrails">Advanced Guardrails</a></li>
+      <li><a href="/examples/custom-policies">Custom Policies</a></li>
+    </ul>
+  </div>
+  <div>
+    <h3>Troubleshooting</h3>
+    <ul>
+      <li><a href="/troubleshooting/common-issues">Common Issues</a></li>
+      <li><a href="/troubleshooting/debugging">Debugging</a></li>
+      <li><a href="/troubleshooting/faq">FAQ</a></li>
+    </ul>
+  </div>
+</div> */}

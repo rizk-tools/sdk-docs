@@ -1,0 +1,179 @@
+/* src/styles/custom.css */
+
+/* Custom colors */
+:root {
+    --sl-color-accent-low: #ffffff11;
+    --sl-color-accent: #4f46e5;
+    --sl-color-accent-high: #312c92;
+    
+    /* Customize other colors if needed */
+    --sl-color-text-accent: #4f46e5;
+    --sl-color-link: #4f46e5;
+    --sl-color-link-hover: #312c92;
+    
+    /* Adjust font if desired */
+    --sl-font: 'Inter', sans-serif;
+  }
+  
+  /* Custom styles for code blocks */
+  .astro-code {
+    border-radius: 0.5rem;
+    padding: 1rem;
+  }
+  
+  /* Improve table styling */
+  table {
+    width: 100%;
+    margin: 2rem 0;
+  }
+  
+  th {
+    background-color: var(--sl-color-gray-6);
+    font-weight: 600;
+  }
+  
+  /* Adjust heading spacing */
+  h2 {
+    margin-top: 2.5rem;
+  }
+  
+  h3 {
+    margin-top: 2rem;
+  }
+  
+  /* Make important notes stand out */
+  .tip, .caution, .danger {
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1.5rem 0;
+  }
+  
+  .tip {
+    background-color: var(--sl-color-accent-low);
+    border-left: 4px solid var(--sl-color-accent);
+  }
+  
+  .caution {
+    background-color: rgba(255, 204, 0, 0.1);
+    border-left: 4px solid #ffcc00;
+  }
+  
+  .danger {
+    background-color: rgba(255, 0, 0, 0.05);
+    border-left: 4px solid #ff0000;
+  }
+  
+  /* Sidebar Styling - Focus on text color only */
+  /* Basic hover effect */
+  .sidebar-item:hover:not([aria-current="page"]) {
+    background-color: rgba(79, 70, 229, 0.08);
+    transition: background-color 0.2s ease;
+  }
+  
+  /* Selected sidebar items - ONLY change text color */
+  .sidebar-item[aria-current="page"],
+  .sidebar-item[data-current-parent="true"],
+  .sidebar-link.active,
+  .sidebar-content a[data-active="true"],
+  .sidebar-content li.current a,
+  .sidebar-navigation a.active,
+  .sidebar-navigation a[aria-current="page"],
+  a[href*="configuration"].active,
+  a[href*="Configuration"].active,
+  li.active > a,
+  .sidebar-content li.current > a {
+    color: white !important;
+    font-weight: 700 !important;
+  }
+  
+  /* Also ensure any nested elements have white text */
+  .sidebar-item[aria-current="page"] *,
+  .sidebar-item[data-current-parent="true"] *,
+  .sidebar-link.active *,
+  .sidebar-content a[data-active="true"] *,
+  .sidebar-navigation a.active *,
+  a[href*="configuration"].active *,
+  a[href*="Configuration"].active *,
+  li.active > a *,
+  .sidebar-content li.current > a * {
+    color: white !important;
+  }
+  
+  /* Extra specificity for Configuration link */
+  ul li a[href*="configuration"],
+  ul li a[href*="Configuration"] {
+    /* Normal state - no changes */
+  }
+  
+  ul li a[href*="configuration"].active,
+  ul li a[href*="Configuration"].active,
+  ul li.active a[href*="configuration"],
+  ul li.active a[href*="Configuration"] {
+    color: white !important;
+    font-weight: 700 !important;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.3); /* Optional: adds slight shadow to improve readability */
+  }
+  
+  /* Last resort - use !important with extremely high specificity */
+  html body .sidebar-navigation ul li a.active,
+  html body .sidebar-content ul li a.active,
+  html body nav ul li a.active {
+    color: white !important;
+    font-weight: 700 !important;
+  }
+
+  /* Add to your existing custom.css */
+
+/* Feature cards grid */
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+    .feature-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  .feature-card {
+    display: block;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(79, 70, 229, 0.2);
+    transition: all 0.2s ease;
+    background-color: rgba(79, 70, 229, 0.05);
+  }
+  
+  .feature-card:hover {
+    background-color: rgba(79, 70, 229, 0.1);
+    border-color: rgba(79, 70, 229, 0.4);
+    transform: translateY(-2px);
+  }
+  
+  .feature-card h3 {
+    margin-top: 0;
+    color: #4f46e5;
+    font-weight: 600;
+  }
+  
+  .feature-card p {
+    margin-bottom: 0;
+    color: #4b5563;
+  }
+  
+  /* Dual column layout */
+  .dual-column {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+    .dual-column {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
