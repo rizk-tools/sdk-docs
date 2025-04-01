@@ -201,7 +201,7 @@ RIZK_DISABLE_BATCH=false
 
 ## Next Steps
 
-- [Using Telemetry Guide](../guides/using-telemetry.md)
-- [Debugging Guide](../troubleshooting/debugging.md)
-- [API Reference](../api/rizk.md)
-- [Examples](../examples/basic-usage.md) 
+<!-- - [Using Telemetry Guide](../guides/using-telemetry)
+- [Debugging Guide](../troubleshooting/debugging) -->
+- [API Reference](/api/rizk)
+<!-- - [Examples](../examples/basic-usage)  -->

@@ -9,39 +9,39 @@ Welcome to the Rizk SDK documentation. Rizk is a powerful SDK for building AI ap
 
 ## Getting Started
 
-- [Installation](./getting-started/installation.md)
-- [Quick Start](./getting-started/quickstart.md)
-- [Configuration](./getting-started/configuration.md)
+- [Installation](./getting-started/installation)
+- [Quick Start](./getting-started/quickstart)
+- [Configuration](./getting-started/configuration)
 
 ## Core Concepts
 
-- [Guardrails](./core-concepts/guardrails.md)
-- [Telemetry](./core-concepts/telemetry.md)
-- [Policy Enforcement](./core-concepts/policy-enforcement.md)
-- [Tracing](./core-concepts/tracing.md)
+- [Guardrails](./core-concepts/guardrails)
+- [Telemetry](./core-concepts/telemetry)
+- [Policy Enforcement](./core-concepts/policy-enforcement)
+- [Tracing](./core-concepts/tracing)
 
 ## API Reference
 
-- [Rizk Class](./api/rizk.md)
-- [Client](./api/client.md)
-- [Decorators](./api/decorators.md)
-- [Guardrails Engine](./api/guardrails-engine.md)
+- [Rizk Class](./api/rizk)
+- [Client](./api/client)
+- [Decorators](./api/decorators)
+- [Guardrails Engine](./api/guardrails-engine)
 
-## Guides
+<!-- ## Guides
 
-- [Building an AI Agent](./guides/building-an-ai-agent.md)
-- [Implementing Guardrails](./guides/implementing-guardrails.md)
-- [Using Telemetry](./guides/using-telemetry.md)
-- [Policy Management](./guides/policy-management.md)
+- [Building an AI Agent](./guides/building-an-ai-agent)
+- [Implementing Guardrails](./guides/implementing-guardrails)
+- [Using Telemetry](./guides/using-telemetry)
+- [Policy Management](./guides/policy-management) -->
 
-## Examples
+<!-- ## Examples
 
-- [Basic Usage](./examples/basic-usage.md)
-- [Advanced Guardrails](./examples/advanced-guardrails.md)
-- [Custom Policies](./examples/custom-policies.md)
+- [Basic Usage](./examples/basic-usage)
+- [Advanced Guardrails](./examples/advanced-guardrails)
+- [Custom Policies](./examples/custom-policies) -->
 
 ## Troubleshooting
 
-- [Common Issues](./troubleshooting/common-issues.md)
-- [Debugging](./troubleshooting/debugging.md)
-- [FAQ](./troubleshooting/faq.md) 
+- [Common Issues](./troubleshooting/common-issues)
+- [Debugging](./troubleshooting/debugging)
+- [FAQ](./troubleshooting/faq)

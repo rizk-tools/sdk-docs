@@ -194,7 +194,7 @@ The following event types are supported:
 
 ## Related Documentation
 
-- [Guardrails Guide](../core-concepts/guardrails.md)
-- [Policy Enforcement Guide](../core-concepts/policy-enforcement.md)
-- [Examples](../examples/advanced-guardrails.md)
-- [API Reference](../api/rizk.md) 
+- [Guardrails Guide](../core-concepts/guardrails)
+- [Policy Enforcement Guide](../core-concepts/policy-enforcement)
+<!-- - [Examples](../examples/advanced-guardrails) -->
+- [API Reference](../api/rizk)

@@ -58,6 +58,6 @@ print("Rizk SDK installed successfully!")
 
 ## Next Steps
 
-- [Quick Start Guide](./quickstart.md)
-- [Configuration Guide](./configuration.md)
-- [API Reference](../api/rizk.md) 
+- [Quick Start Guide](./quickstart)
+- [Configuration Guide](./configuration)
+- [API Reference](../api/rizk) 

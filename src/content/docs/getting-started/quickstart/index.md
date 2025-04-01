@@ -122,7 +122,7 @@ Let's break down the key components:
 
 ## Next Steps
 
-- [Configuration Guide](./configuration.md)
-- [Guardrails Documentation](../core-concepts/guardrails.md)
-- [Telemetry Guide](../guides/using-telemetry.md)
-- [Advanced Examples](../examples/advanced-guardrails.md) 
+- [Configuration Guide](./configuration)
+- [Guardrails Documentation](../core-concepts/guardrails)
+<!-- - [Telemetry Guide](../guides/using-telemetry) -->
+<!-- - [Advanced Examples](../examples/advanced-guardrails)  -->

@@ -120,7 +120,7 @@ client = Rizk.init(
 
 ## Next Steps
 
-- [Guardrails Documentation](../core-concepts/guardrails.md)
-- [Telemetry Guide](../guides/using-telemetry.md)
-- [Policy Management](../guides/policy-management.md)
-- [API Reference](../api/rizk.md) 
+- [Guardrails Documentation](../core-concepts/guardrails)
+<!-- - [Telemetry Guide](../guides/using-telemetry)
+- [Policy Management](../guides/policy-management) -->
+- [API Reference](/api/rizk) 

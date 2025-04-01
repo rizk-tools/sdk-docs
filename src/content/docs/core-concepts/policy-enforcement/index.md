@@ -224,7 +224,7 @@ guardrails.state_manager.update_state("conv123", {
 
 ## Next Steps
 
-- [Policy Management Guide](../guides/policy-management.md)
-- [Advanced Guardrails Examples](../examples/advanced-guardrails.md)
-- [Custom Policies Guide](../examples/custom-policies.md)
-- [API Reference](../api/guardrails-engine.md) 
+<!-- - [Policy Management Guide](../guides/policy-management) -->
+<!-- - [Advanced Guardrails Examples](../examples/advanced-guardrails)
+- [Custom Policies Guide](../examples/custom-policies) -->
+- [API Reference](../api/guardrails-engine)
