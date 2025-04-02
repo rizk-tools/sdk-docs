@@ -43,6 +43,13 @@ export default defineConfig({
             { label: 'Telemetry', link: '/api/telemetry/' },
           ],
         },
+        {
+          label: 'LLMs',
+          items: [
+            { label: 'LLMs.txt', link: '/llms.txt' },
+            { label: 'LLMs-full.txt', link: '/llms-full.txt' },
+          ],
+        },
       ],
       customCss: [
         './src/styles/custom.css',
