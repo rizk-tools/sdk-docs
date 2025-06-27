@@ -177,3 +177,446 @@
       grid-template-columns: 1fr 1fr;
     }
   }
+
+/* Custom styles for Rizk SDK Documentation */
+
+/* Fix double title issue - hide the H1 when it matches the page title */
+.sl-markdown-content h1:first-child {
+  display: none;
+}
+
+/* Improve sidebar selection colors - using correct Starlight selectors */
+[data-theme="dark"] .sl-nav-sidebar a[aria-current="page"] {
+  background-color: rgba(59, 130, 246, 0.15) !important; /* Light blue background */
+  color: #60a5fa !important; /* Light blue text */
+  border-left: 3px solid #3b82f6 !important;
+  font-weight: 500 !important;
+}
+
+[data-theme="dark"] .sl-nav-sidebar a[aria-current="page"]:hover {
+  background-color: rgba(59, 130, 246, 0.25) !important;
+}
+
+/* Improve general sidebar link hover states */
+[data-theme="dark"] .sl-nav-sidebar a:hover {
+  background-color: rgba(75, 85, 99, 0.3) !important;
+  color: #f9fafb !important;
+}
+
+/* Better focus states for accessibility */
+[data-theme="dark"] .sl-nav-sidebar a:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Improve sidebar group styling */
+[data-theme="dark"] .sl-nav-sidebar details summary {
+  color: #d1d5db;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+}
+
+[data-theme="dark"] .sl-nav-sidebar details[open] summary {
+  color: #f9fafb;
+}
+
+/* Improve feature grid styling on homepage */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.feature-card {
+  background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+  border: 1px solid #374151;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6, #06b6d4);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border-color: #3b82f6;
+}
+
+.feature-card:hover::before {
+  opacity: 1;
+}
+
+.feature-card h3 {
+  margin: 0 0 0.5rem 0;
+  color: #f9fafb;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.feature-card p {
+  margin: 0;
+  color: #d1d5db;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Improve code block styling */
+.expressive-code {
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Better table styling */
+.sl-markdown-content table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0;
+  background: #1f2937;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.sl-markdown-content table th {
+  background: #374151;
+  color: #f9fafb;
+  font-weight: 600;
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 2px solid #4b5563;
+}
+
+.sl-markdown-content table td {
+  padding: 0.875rem 1rem;
+  border-bottom: 1px solid #374151;
+  color: #e5e7eb;
+}
+
+.sl-markdown-content table tr:hover {
+  background: rgba(59, 130, 246, 0.05);
+}
+
+/* Improve blockquote styling */
+.sl-markdown-content blockquote {
+  border-left: 4px solid #3b82f6;
+  background: rgba(59, 130, 246, 0.05);
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 0 8px 8px 0;
+}
+
+/* Better badge/tag styling for parameters */
+.sl-markdown-content code {
+  background: rgba(59, 130, 246, 0.1);
+  color: #93c5fd;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+/* Improve navigation breadcrumbs */
+.sl-nav-breadcrumbs {
+  margin-bottom: 2rem;
+}
+
+/* Better spacing for content sections */
+.sl-markdown-content h2 {
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #374151;
+}
+
+.sl-markdown-content h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #f9fafb;
+}
+
+/* Improve "On this page" sidebar */
+.sl-toc a {
+  color: #d1d5db;
+  transition: color 0.2s ease;
+}
+
+.sl-toc a:hover {
+  color: #3b82f6;
+}
+
+.sl-toc a[aria-current="true"] {
+  color: #3b82f6;
+  font-weight: 500;
+}
+
+/* Better mobile responsiveness */
+@media (max-width: 768px) {
+  .feature-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .feature-card {
+    padding: 1.25rem;
+  }
+  
+  .sl-markdown-content table {
+    font-size: 0.875rem;
+  }
+  
+  .sl-markdown-content table th,
+  .sl-markdown-content table td {
+    padding: 0.75rem;
+  }
+}
+
+/* Improve search styling */
+.sl-search-button {
+  transition: all 0.2s ease;
+}
+
+.sl-search-button:hover {
+  background: rgba(59, 130, 246, 0.1);
+  border-color: #3b82f6;
+}
+
+/* Add subtle animations */
+.sl-markdown-content {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Improve link styling */
+.sl-markdown-content a {
+  color: #60a5fa;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.sl-markdown-content a:hover {
+  border-bottom-color: #60a5fa;
+}
+
+/* Better warning/info boxes */
+.sl-markdown-content .admonition {
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  overflow: hidden;
+}
+
+/* Improve logo and header */
+.sl-nav-logo {
+  transition: transform 0.2s ease;
+}
+
+.sl-nav-logo:hover {
+  transform: scale(1.05);
+}
+
+/* Add custom styling for parameter tables */
+.sl-markdown-content table th:first-child {
+  width: 20%;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.sl-markdown-content table td:first-child {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 500;
+  color: #93c5fd;
+}
+
+/* Improve inline code in tables */
+.sl-markdown-content table code {
+  background: rgba(34, 197, 94, 0.1);
+  color: #4ade80;
+  border: 1px solid rgba(34, 197, 94, 0.2);
+}
+
+/* Add visual hierarchy for different heading levels */
+.sl-markdown-content h2 {
+  color: #f9fafb;
+  font-size: 1.75rem;
+  font-weight: 700;
+  position: relative;
+}
+
+.sl-markdown-content h2::before {
+  content: '';
+  position: absolute;
+  left: -1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 1.5rem;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  border-radius: 2px;
+}
+
+.sl-markdown-content h3 {
+  color: #e5e7eb;
+  font-size: 1.375rem;
+  font-weight: 600;
+}
+
+.sl-markdown-content h4 {
+  color: #d1d5db;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+}
+
+/* Improve list styling */
+.sl-markdown-content ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sl-markdown-content ul li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.sl-markdown-content ul li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: #3b82f6;
+  font-weight: bold;
+}
+
+.sl-markdown-content ol li {
+  margin-bottom: 0.5rem;
+}
+
+/* Improve alert/note boxes */
+.sl-markdown-content .note,
+.sl-markdown-content .tip,
+.sl-markdown-content .warning,
+.sl-markdown-content .danger {
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border-left: 4px solid;
+}
+
+.sl-markdown-content .note {
+  background: rgba(59, 130, 246, 0.05);
+  border-left-color: #3b82f6;
+}
+
+.sl-markdown-content .tip {
+  background: rgba(34, 197, 94, 0.05);
+  border-left-color: #22c55e;
+}
+
+.sl-markdown-content .warning {
+  background: rgba(245, 158, 11, 0.05);
+  border-left-color: #f59e0b;
+}
+
+.sl-markdown-content .danger {
+  background: rgba(239, 68, 68, 0.05);
+  border-left-color: #ef4444;
+}
+
+/* Add smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Improve page transitions */
+.sl-main-content {
+  animation: slideIn 0.4s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Add subtle gradient background */
+[data-theme="dark"] body {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+}
+
+/* Improve header styling */
+[data-theme="dark"] .sl-nav-header {
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(59, 130, 246, 0.1);
+}
+
+/* Add hover effect to navigation items */
+.sl-nav-sidebar a {
+  transition: all 0.2s ease;
+  border-radius: 6px;
+  margin: 2px 8px;
+}
+
+/* Improve table of contents */
+.sl-toc {
+  background: rgba(31, 41, 55, 0.5);
+  border-radius: 8px;
+  padding: 1rem;
+  backdrop-filter: blur(10px);
+}
+
+.sl-toc-title {
+  color: #f9fafb;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Add custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
