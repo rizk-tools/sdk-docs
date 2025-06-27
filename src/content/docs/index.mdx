@@ -8,6 +8,10 @@ Welcome to the Rizk SDK documentation. Rizk is a powerful SDK for building AI ap
 ## Getting Started
 
 <div class="feature-grid">
+  <a href="/getting-started/overview" class="feature-card">
+    <h3>Overview</h3>
+    <p>High-level introduction to Rizk SDK</p>
+  </a>
   <a href="/getting-started/installation" class="feature-card">
     <h3>Installation</h3>
     <p>Setting up Rizk SDK in your project</p>
@@ -15,6 +19,10 @@ Welcome to the Rizk SDK documentation. Rizk is a powerful SDK for building AI ap
   <a href="/getting-started/quickstart" class="feature-card">
     <h3>Quick Start</h3>
     <p>Build your first app with Rizk SDK</p>
+  </a>
+  <a href="/getting-started/first-example" class="feature-card">
+    <h3>First Example</h3>
+    <p>Detailed walkthrough with explanations</p>
   </a>
   <a href="/getting-started/configuration" class="feature-card">
     <h3>Configuration</h3>
@@ -25,83 +33,268 @@ Welcome to the Rizk SDK documentation. Rizk is a powerful SDK for building AI ap
 ## Core Concepts
 
 <div class="feature-grid">
-  <a href="/core-concepts/guardrails" class="feature-card">
-    <h3>Guardrails</h3>
-    <p>Protect your AI applications</p>
+  <a href="/core-concepts/architecture" class="feature-card">
+    <h3>Architecture</h3>
+    <p>System architecture and design principles</p>
   </a>
-  <a href="/core-concepts/telemetry" class="feature-card">
-    <h3>Telemetry</h3>
-    <p>Monitor and analyze usage</p>
+  <a href="/core-concepts/framework-detection" class="feature-card">
+    <h3>Framework Detection</h3>
+    <p>How automatic framework detection works</p>
   </a>
-  <a href="/core-concepts/policy-enforcement" class="feature-card">
+  <a href="/core-concepts/adapters" class="feature-card">
+    <h3>Adapters</h3>
+    <p>Adapter system and framework integration</p>
+  </a>
+  <a href="/core-concepts/observability" class="feature-card">
+    <h3>Observability</h3>
+    <p>OpenTelemetry integration and tracing</p>
+  </a>
+  <a href="/core-concepts/guardrails-overview" class="feature-card">
+    <h3>Guardrails Overview</h3>
+    <p>Introduction to policy enforcement system</p>
+  </a>
+  <a href="/core-concepts/decorators-overview" class="feature-card">
+    <h3>Decorators Overview</h3>
+    <p>Introduction to Rizk decorators</p>
+  </a>
+</div>
+
+## Framework Integration
+
+<div class="feature-grid">
+  <a href="/framework-integration/openai-agents" class="feature-card">
+    <h3>OpenAI Agents</h3>
+    <p>OpenAI Agents SDK integration</p>
+  </a>
+  <a href="/framework-integration/langchain" class="feature-card">
+    <h3>LangChain</h3>
+    <p>LangChain framework integration</p>
+  </a>
+  <a href="/framework-integration/crewai" class="feature-card">
+    <h3>CrewAI</h3>
+    <p>CrewAI multi-agent framework integration</p>
+  </a>
+  <a href="/framework-integration/llama-index" class="feature-card">
+    <h3>LlamaIndex</h3>
+    <p>LlamaIndex query engine integration</p>
+  </a>
+  <a href="/framework-integration/langgraph" class="feature-card">
+    <h3>LangGraph</h3>
+    <p>LangGraph state machine integration</p>
+  </a>
+  <a href="/framework-integration/multi-framework" class="feature-card">
+    <h3>Multi-Framework</h3>
+    <p>Using multiple frameworks together</p>
+  </a>
+  <a href="/framework-integration/custom-frameworks" class="feature-card">
+    <h3>Custom Frameworks</h3>
+    <p>Integrating custom frameworks</p>
+  </a>
+</div>
+
+## Decorators
+
+<div class="feature-grid">
+  <a href="/decorators/workflow" class="feature-card">
+    <h3>@workflow</h3>
+    <p>Decorator for high-level processes</p>
+  </a>
+  <a href="/decorators/task" class="feature-card">
+    <h3>@task</h3>
+    <p>Decorator for individual operations</p>
+  </a>
+  <a href="/decorators/agent" class="feature-card">
+    <h3>@agent</h3>
+    <p>Decorator for autonomous components</p>
+  </a>
+  <a href="/decorators/tool" class="feature-card">
+    <h3>@tool</h3>
+    <p>Decorator for utility functions</p>
+  </a>
+  <a href="/decorators/crew" class="feature-card">
+    <h3>@crew</h3>
+    <p>Decorator for CrewAI-specific workflows</p>
+  </a>
+  <a href="/decorators/guardrails" class="feature-card">
+    <h3>@guardrails</h3>
+    <p>Decorator for policy enforcement</p>
+  </a>
+  <a href="/decorators/mcp-guardrails" class="feature-card">
+    <h3>@mcp_guardrails</h3>
+    <p>Model Context Protocol protection</p>
+  </a>
+  <a href="/decorators/decorator-composition" class="feature-card">
+    <h3>Decorator Composition</h3>
+    <p>Combining multiple decorators</p>
+  </a>
+  <a href="/decorators/policies" class="feature-card">
+    <h3>Policies</h3>
+    <p>Custom policy decorators</p>
+  </a>
+</div>
+
+## LLM Adapters
+
+<div class="feature-grid">
+  <a href="/llm-adapters/openai" class="feature-card">
+    <h3>OpenAI</h3>
+    <p>OpenAI API integration</p>
+  </a>
+  <a href="/llm-adapters/openai-completions" class="feature-card">
+    <h3>OpenAI Completions</h3>
+    <p>Chat Completions API adapter</p>
+  </a>
+  <a href="/llm-adapters/openai-agents-sdk" class="feature-card">
+    <h3>OpenAI Agents SDK</h3>
+    <p>Agents SDK specific adapter</p>
+  </a>
+  <a href="/llm-adapters/anthropic" class="feature-card">
+    <h3>Anthropic</h3>
+    <p>Anthropic Claude integration</p>
+  </a>
+  <a href="/llm-adapters/gemini" class="feature-card">
+    <h3>Gemini</h3>
+    <p>Google Gemini integration</p>
+  </a>
+  <a href="/llm-adapters/ollama" class="feature-card">
+    <h3>Ollama</h3>
+    <p>Local Ollama integration</p>
+  </a>
+  <a href="/llm-adapters/custom-llm" class="feature-card">
+    <h3>Custom LLM</h3>
+    <p>Custom LLM provider integration</p>
+  </a>
+</div>
+
+## Guardrails
+
+<div class="feature-grid">
+  <a href="/guardrails/overview" class="feature-card">
+    <h3>Overview</h3>
+    <p>Multi-layer guardrails architecture</p>
+  </a>
+  <a href="/guardrails/using-guardrails" class="feature-card">
+    <h3>Using Guardrails</h3>
+    <p>Practical implementation guide</p>
+  </a>
+  <a href="/guardrails/policy-enforcement" class="feature-card">
     <h3>Policy Enforcement</h3>
-    <p>Implement and enforce policies</p>
+    <p>Policy decision flow and enforcement levels</p>
   </a>
-  <a href="/core-concepts/tracing" class="feature-card">
+  <a href="/guardrails/configuration" class="feature-card">
+    <h3>Configuration</h3>
+    <p>Advanced guardrails configuration</p>
+  </a>
+  <a href="/guardrails/mcp-protection" class="feature-card">
+    <h3>MCP Protection</h3>
+    <p>Model Context Protocol security policies</p>
+  </a>
+  <a href="/guardrails/monitoring" class="feature-card">
+    <h3>Monitoring</h3>
+    <p>Performance tracking and real-time monitoring</p>
+  </a>
+</div>
+
+## Observability
+
+<div class="feature-grid">
+  <a href="/observability/tracing" class="feature-card">
     <h3>Tracing</h3>
-    <p>Debug and track execution flows</p>
+    <p>Distributed tracing with OpenTelemetry</p>
+  </a>
+  <a href="/observability/analytics" class="feature-card">
+    <h3>Analytics</h3>
+    <p>Event collection and analytics framework</p>
+  </a>
+  <a href="/observability/streaming-observability" class="feature-card">
+    <h3>Streaming Observability</h3>
+    <p>Real-time streaming monitoring</p>
+  </a>
+  <a href="/observability/cache-analytics" class="feature-card">
+    <h3>Cache Analytics</h3>
+    <p>Redis-backed distributed caching analytics</p>
+  </a>
+</div>
+
+## Advanced Configuration
+
+<div class="feature-grid">
+  <a href="/advanced-config/production-setup" class="feature-card">
+    <h3>Production Setup</h3>
+    <p>Enterprise deployment configuration</p>
+  </a>
+  <a href="/advanced-config/environment-variables" class="feature-card">
+    <h3>Environment Variables</h3>
+    <p>Complete environment variable reference</p>
+  </a>
+  <a href="/advanced-config/performance-tuning" class="feature-card">
+    <h3>Performance Tuning</h3>
+    <p>Cache optimization and performance settings</p>
+  </a>
+  <a href="/advanced-config/security" class="feature-card">
+    <h3>Security</h3>
+    <p>API key management and content privacy</p>
+  </a>
+  <a href="/advanced-config/scaling" class="feature-card">
+    <h3>Scaling</h3>
+    <p>Multi-instance deployment and auto-scaling</p>
   </a>
 </div>
 
 ## API Reference
 
 <div class="feature-grid">
-  <a href="/api/rizk" class="feature-card">
+  <a href="/api-reference/index" class="feature-card">
+    <h3>API Overview</h3>
+    <p>API reference navigation and overview</p>
+  </a>
+  <a href="/api-reference/rizk-class" class="feature-card">
     <h3>Rizk Class</h3>
-    <p>Core SDK functionality</p>
+    <p>Core Rizk class methods and initialization</p>
   </a>
-  <a href="/api/client" class="feature-card">
-    <h3>Client</h3>
-    <p>Client-side integration</p>
+  <a href="/api-reference/decorators-api" class="feature-card">
+    <h3>Decorators API</h3>
+    <p>Complete decorators API documentation</p>
   </a>
-  <a href="/api/decorators" class="feature-card">
-    <h3>Decorators</h3>
-    <p>Extend functionality</p>
+  <a href="/api-reference/guardrails-api" class="feature-card">
+    <h3>Guardrails API</h3>
+    <p>GuardrailsEngine comprehensive API</p>
   </a>
-  <a href="/api/guardrails-engine" class="feature-card">
-    <h3>Guardrails Engine</h3>
-    <p>Advanced guardrails configuration</p>
+  <a href="/api-reference/configuration-api" class="feature-card">
+    <h3>Configuration API</h3>
+    <p>Configuration management API</p>
+  </a>
+  <a href="/api-reference/types" class="feature-card">
+    <h3>Types</h3>
+    <p>Type definitions, protocols, and data structures</p>
+  </a>
+  <a href="/api-reference/utilities" class="feature-card">
+    <h3>Utilities</h3>
+    <p>Framework detection and utility functions</p>
   </a>
 </div>
 
-{/* ## Guides
+## Troubleshooting
 
 <div class="feature-grid">
-  <a href="/guides/building-an-ai-agent" class="feature-card">
-    <h3>Building an AI Agent</h3>
-    <p>Create intelligent agents</p>
+  <a href="/troubleshooting/common-issues" class="feature-card">
+    <h3>Common Issues</h3>
+    <p>Frequently encountered problems and solutions</p>
   </a>
-  <a href="/guides/implementing-guardrails" class="feature-card">
-    <h3>Implementing Guardrails</h3>
-    <p>Set up effective protections</p>
+  <a href="/troubleshooting/debugging" class="feature-card">
+    <h3>Debugging</h3>
+    <p>SDK debugging tools and techniques</p>
   </a>
-  <a href="/guides/using-telemetry" class="feature-card">
-    <h3>Using Telemetry</h3>
-    <p>Collect and analyze metrics</p>
+  <a href="/troubleshooting/performance-issues" class="feature-card">
+    <h3>Performance Issues</h3>
+    <p>Performance troubleshooting guide</p>
   </a>
-  <a href="/guides/policy-management" class="feature-card">
-    <h3>Policy Management</h3>
-    <p>Manage and enforce policies</p>
+  <a href="/troubleshooting/integration-issues" class="feature-card">
+    <h3>Integration Issues</h3>
+    <p>Framework integration troubleshooting</p>
   </a>
-</div> */}
-
-{/* ## Examples & Troubleshooting
-
-<div class="dual-column">
-  <div>
-    <h3>Examples</h3>
-    <ul>
-      <li><a href="/examples/basic-usage">Basic Usage</a></li>
-      <li><a href="/examples/advanced-guardrails">Advanced Guardrails</a></li>
-      <li><a href="/examples/custom-policies">Custom Policies</a></li>
-    </ul>
-  </div>
-  <div>
-    <h3>Troubleshooting</h3>
-    <ul>
-      <li><a href="/troubleshooting/common-issues">Common Issues</a></li>
-      <li><a href="/troubleshooting/debugging">Debugging</a></li>
-      <li><a href="/troubleshooting/faq">FAQ</a></li>
-    </ul>
-  </div>
-</div> */}
+  <a href="/troubleshooting/policy-debugging" class="feature-card">
+    <h3>Policy Debugging</h3>
+    <p>Policy evaluation debugging tools</p>
+  </a>
+</div>
